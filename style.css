@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #77a8dd;
+}
+
+.kort {
+    position: relative;
+    width: 90%;
+    max-width: 470px;
+    color: #fff;
+    background: #f4f4f8;
+    margin: 100px auto;
+    border-radius: 20px;
+    padding: 45px 45px; 
+    text-align: center;
+}
+
+.søk {
+    border: 0;
+    padding: 8px 15px;
+    height: 45px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 1.125rem;
+}
+
+.søke__knapp {
+    position:  absolute;
+    border: 0;
+    padding: 8px 15px;
+    height: 40px;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    background: #77a8dd;
+    color: #fff;
+    cursor: pointer;
+    top: 45px;
+   
+} 
+
+.søke__knapp img {
+    width: 16px;
+}
+
+.søke__ikon {
+    position: absolute;
+    height: 22px;
+    left: 14px;
+    top: 14px;
+    filter: invert(1) brightness(1.5);
+}
+
+.vær__primær__bilde {
+    margin-top: -75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vær__primær__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vær__ikon {
+    width: 160px;
+}
+
+.vær h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.vær h2 {
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.vær h1, 
+.vær h2 {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.vær__sekundær__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.kol{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.kol img {
+    width: 40px;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+.kol p {
+    color: #fff;
+}
