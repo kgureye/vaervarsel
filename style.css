@@ -5,23 +5,19 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #77a8dd;
-}
-
 .kort {
     position: relative;
     width: 90%;
     max-width: 470px;
     color: #fff;
-    background: #f4f4f8;
     margin: 100px auto;
     border-radius: 20px;
     padding: 45px 45px; 
     text-align: center;
+    background: #77a8dd;
 }
 
-.søk {
+.søke__felt {
     border: 0;
     padding: 8px 15px;
     height: 45px;
@@ -32,7 +28,7 @@ body {
 }
 
 .søke__knapp {
-    position:  absolute;
+    position:  relative;
     border: 0;
     padding: 8px 15px;
     height: 40px;
@@ -41,10 +37,8 @@ body {
     border-radius: 30px;
     flex: 1;
     margin-right: 16px;
-    background: #77a8dd;
-    color: #fff;
+    background: #fff;
     cursor: pointer;
-    top: 45px;
    
 } 
 
@@ -52,26 +46,28 @@ body {
     width: 16px;
 }
 
-.søke__ikon {
+.søke__ikon button {
     position: absolute;
     height: 22px;
     left: 14px;
-    top: 14px;
+    top: 12px;
     filter: invert(1) brightness(1.5);
 }
 
-.vær__primær__bilde {
-    margin-top: -75px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.vær {
+    position: relative;
+    display: none;
 }
 
-.vær__primær__info {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.vær__dato {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-right: 5px;
+    color: #fff;
+    position: absolute;
+    top: -10px;
 }
+
 
 .vær__ikon {
     width: 160px;
@@ -106,14 +102,51 @@ body {
     display: flex;
     align-items: center;
     text-align: left;
+    padding: 3px 0;
 }
 
 .kol img {
-    width: 40px;
+    width: 25px;
     margin-right: 15px;
     margin-left: 10px;
 }
 
 .kol p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-right: 5px;
     color: #fff;
+}
+
+.vær__info {
+    display: inline-block;
+  
+
+}
+
+.vær__dato {
+    font-size: 1.125rem;
+    font-weight: 500;
+    margin-right: 5px;
+    color: #fff;
+    position: absolute;
+    top: 8px;
+    left: 100px;
+    right: 115px;
+}
+
+.vær__ikon {
+    width: 160px;
+    margin-top: 5px;
+}
+
+.feilmelding {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10pox;
+    text-align: center;
+    margin-top: 2px;
+    color: red;
+    display: none;
 }

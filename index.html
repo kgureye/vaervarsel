@@ -10,71 +10,66 @@
 <body>
     
     <div class="kort">
-        <input class="søk" type="text" placeholder="Søk etter en by">
-        <button class="søke__knapp" href="#">
-            <img class="søke__ikon" src="bilder/search.png" alt="Søke Ikon">
-        </button>
-    </div>
+        <div class="søk">
+            <input class="søke__felt" type="text" placeholder="Søk etter en by" spellcheck="true">
+            <button class="søke__knapp">
+                <img class="søke__ikon" src="bilder/search.png" alt="Søke Ikon">
+            </button>
+        </div>
+        <div class="feilmelding">
+            <p></p>
+        </div>
     <div class="vær">
-        <div class="vær__primær__bilde">
+            <span class="vær__dato"></span>
             <img src="bilder/rain.png" alt="Regn Ikon" class="vær__ikon">
-        </div>
-        <div class="vær__primær__info">
-            <h1 class="vær__temp">22&deg;</h1>
-            <h2 class="vær__by">Oslo</h2>
-        </div>
-        <div class="vær__sekundær__info">
-            <div class="kol">
-                <img src="bilder/humidity.png" alt="Luftfuktighet Ikon">
-                <div>
-                    <p class="luftfuktighet">50%</p>
-                    <p>Luftfuktighet</p>
-                </div>
-            </div>
-            <div class="kol">
-                <img src="bilder/wind.png" alt="Vind Ikon">
-                <div>
-                    <p class="tind">50%</p>
-                    <p>Vind</p>
+            <h2 class="vær__temp">22&deg;</h2>
+            <h2 class="vær__by"> Oslo</h2>
+            
+            <div class="vær__info">
+                <div class="kol">
+                    <img src="bilder/humidity.png" alt="Luftfuktighet Ikon">
+                        <p class="luftfuktighet">50%</p>
+                        <p>Luftfuktighet</p>
                 </div>
                 <div class="kol">
-                    <img src="bilder/mist.png" alt="Tåke Ikon">
-                    <div>
-                        <p class="tåke">50%</p>
-                        <p>Tåke</p>
-                    </div>
+                    <img src="bilder/wind.png" alt="Vind Ikon">
+                        <p class="vind">50%</p>
+                        <p>Vind</p>
                 </div>
                 <div class="kol">
-                    <img src="bilder/snow.png" alt="Snø Ikon">
-                    <div>
-                        <p class="snø">50%</p>
-                        <p>Snø</p>
-                    </div>
-                </div>
-                <div class="kol">
-                    <img src="bilder/clouds.png" alt="Sky Ikon">
-                    <div>
-                        <p class="snø">50%</p>
-                        <p>Snø</p>
-                    </div>
+                    <img src="bilder/clouds.png" alt="Skyete Ikon">
+                        <p class="vind">50%</p>
+                        <p>Skyete</p>
                 </div>
                 <div class="kol">
                     <img src="bilder/clear.png" alt="Klar Ikon">
-                    <div>
-                        <p class="klar">50%</p>
+                        <p class="vind">50%</p>
                         <p>Klar</p>
-                    </div>
                 </div>
                 <div class="kol">
                     <img src="bilder/drizzle.png" alt="Duskregn Ikon">
-                    <div>
-                        <p class="duskregn">50%</p>
+                        <p class="vind">50%</p>
                         <p>Duskregn</p>
-                    </div>
                 </div>
-            </div>
+                <div class="kol">
+                    <img src="bilder/mist.png" alt="Tåke Ikon">
+                        <p class="vind">50%</p>
+                        <p>Tåke</p>
+                </div>
+                <div class="kol">
+                    <img src="bilder/rain.png" alt="Regn Ikon">
+                        <p class="vind">50%</p>
+                        <p>Regn</p>
+                </div>
+                <div class="kol">
+                    <img src="bilder/snow.png" alt="Snø Ikon">
+                        <p class="vind">50%</p>
+                        <p>Snø</p>
+                </div>
+            </div>  
         </div>
-
     </div>
+</div>
+    <script src="./data.js" type="module"></script>
 </body>
 </html>
