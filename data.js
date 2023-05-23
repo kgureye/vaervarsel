@@ -9,6 +9,20 @@ const søkeFelt  = document.querySelector('.søk input');
 const søkeKnapp = document.querySelector('.søk button');
 const værIkon = document.querySelector('.vær__ikon');
 
+/* Loader */
+const loader  = document.querySelector('.loading');
+
+function displayLoading() {
+    loader.classList.add('display');
+
+    setTimeout(() => { 
+        loader.classList.remove('display');
+    }, 5000);
+}
+
+function hideLoading() {
+    loader.classList.remove('display');
+}
 
 
 const getWeather = async (city) => {
@@ -51,8 +65,22 @@ const getWeather = async (city) => {
 }
 
 
-søkeKnapp.addEventListener('click', () => {
-    getWeather(søkeFelt.value);
+søkeKnapp.addEventListener('click', async () => {
+    
+    displayLoading();
+
+    setTimeout ( async () => {
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    try {
+                // Utfør API kallet og avvent responsen
+                getWeather(søkeFelt.value);
+    } catch (error) {
+            console.error('Error fetching API data: ', error);
+    }
+     hideLoading();
+    }, 2000)
 })
 
+
 getWeather()
+

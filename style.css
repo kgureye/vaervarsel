@@ -5,6 +5,31 @@
     box-sizing: border-box;
 }
 
+.loading {
+    content: "";
+    width: 3rem;
+    height: 3rem;
+    border: 15px solid  #dddddd;
+    border-top-color: #77a8dd;
+    border-radius: 100%;
+    margin: auto;
+    display: none;
+    animation: spin .75s infinite linear;
+}
+
+.loading.display {
+    display: block;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .kort {
     position: relative;
     width: 90%;
