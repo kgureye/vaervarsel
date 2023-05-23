@@ -33,7 +33,7 @@
 .kort {
     position: relative;
     width: 90%;
-    max-width: 470px;
+    max-width: 700px;
     color: #fff;
     margin: 100px auto;
     border-radius: 20px;
@@ -174,4 +174,44 @@
     margin-top: 2px;
     color: red;
     display: none;
+}
+
+.vær__prognose {
+   display: flex;
+   padding: 24px 10px;
+   
+}
+
+.vær__boks {
+    border: 1px solid #fff;
+    margin: 0 auto;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgb(16 47 96 / 8%);
+    margin-right: 28px;
+    text-align: center;
+    padding: 17px;
+    height: 159px;
+}
+
+.vær__dag__dato {
+    color: #000;
+
+}
+
+.vær__dag__måned {
+    color: #000;
+}
+.vær__dag__img img {
+    width: 50%
+}
+
+.vær__dag__mm {
+    color: #000;
+}
+
+.vær__femdager__wrap span {
+    color: #000;
 }
